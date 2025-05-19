@@ -152,7 +152,7 @@ const PasswordGenerator = () => {
                 <Checkbox
                   id="uppercase"
                   checked={includeUppercase}
-                  onCheckedChange={setIncludeUppercase}
+                  onCheckedChange={(checked) => setIncludeUppercase(checked === true)}
                 />
                 <label htmlFor="uppercase" className="text-sm cursor-pointer">
                   Uppercase (A-Z)
@@ -162,7 +162,7 @@ const PasswordGenerator = () => {
                 <Checkbox
                   id="lowercase"
                   checked={includeLowercase}
-                  onCheckedChange={setIncludeLowercase}
+                  onCheckedChange={(checked) => setIncludeLowercase(checked === true)}
                 />
                 <label htmlFor="lowercase" className="text-sm cursor-pointer">
                   Lowercase (a-z)
@@ -172,7 +172,7 @@ const PasswordGenerator = () => {
                 <Checkbox
                   id="numbers"
                   checked={includeNumbers}
-                  onCheckedChange={setIncludeNumbers}
+                  onCheckedChange={(checked) => setIncludeNumbers(checked === true)}
                 />
                 <label htmlFor="numbers" className="text-sm cursor-pointer">
                   Numbers (0-9)
@@ -182,7 +182,7 @@ const PasswordGenerator = () => {
                 <Checkbox
                   id="symbols"
                   checked={includeSymbols}
-                  onCheckedChange={setIncludeSymbols}
+                  onCheckedChange={(checked) => setIncludeSymbols(checked === true)}
                 />
                 <label htmlFor="symbols" className="text-sm cursor-pointer">
                   Symbols (!@#$%)
